@@ -1,0 +1,1402 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.page,
+.hero,
+.about,
+.projects,
+.designers,
+.founder-page,
+.founder-hero,
+.founder-story,
+.founder-final,
+.mila-box,
+.people-grid,
+.contacts,
+.footer,
+.top-menu,
+.menu-box {
+  max-width: 100vw;
+}
+
+.menu-box,
+.about,
+.contacts,
+.footer,
+.popup-box {
+  box-sizing: border-box;
+}
+
+.project,
+.project-card,
+.person,
+.popup-image {
+  max-width: 100%;
+}
+
+.about-text {
+  position: relative;
+  z-index: 1;
+}
+
+.plant-left,
+.plant-right {
+  z-index: 0;
+}
+
+@media (max-width: 1280px) {
+  .menu-link {
+    font-size: var(--normal-text);
+  }
+
+  .sub-menu {
+    font-size: var(--normal-text);
+  }
+
+  .about-text {
+    font-size: var(--normal-text);
+  }
+
+  .contact-text {
+    font-size: var(--normal-text);
+  }
+
+  .form-line {
+    font-size: var(--normal-text);
+  }
+
+  .form-input,
+  .form-text,
+  .form-button {
+    font-size: var(--normal-text);
+  }
+}
+
+@media (max-width: 1100px) {
+  .top-menu {
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .menu-box {
+    width: 100vw;
+    height: 56px;
+    min-height: 56px;
+  }
+
+  .menu-logo {
+    width: 3vw;
+  }
+
+  .project-one {
+    width: 54vw;
+  }
+
+  .project-two {
+    width: 48vw;
+  }
+
+  .project-three {
+    width: 48vw;
+  }
+
+  .person-text {
+    font-size: var(--normal-text);
+  }
+
+  .mila-text {
+    font-size: var(--normal-text);
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --normal-text: 16px;
+    --small-text: 16px;
+  }
+
+  .top-menu {
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .menu-box {
+    align-items: center;
+    width: 100vw;
+    height: 56px;
+    min-height: 56px;
+    padding: 0 3vw;
+  }
+
+  .menu-left {
+    display: flex;
+    width: 78vw;
+    gap: 10px 4vw;
+    padding-right: 12vw;
+    flex-wrap: wrap;
+  }
+
+  .menu-link {
+    font-size: var(--normal-text);
+    line-height: 1.1;
+  }
+
+  .sub-menu {
+    top: 61px;
+    left: 0;
+    gap: 18px;
+    width: 100vw;
+    padding: 18px 0 18px 12vw;
+    border-radius: 10px;
+    font-size: var(--normal-text);
+  }
+
+  .menu-logo {
+    left: auto;
+    right: 4vw;
+    width: clamp(30px, 7vw, 46px);
+    transform: translateY(-50%);
+  }
+
+  .hero {
+    height: 88vh;
+    min-height: 560px;
+  }
+
+  .hero-picture {
+    height: 100%;
+  }
+
+  .hero-name {
+    bottom: 1vh;
+    left: -7vw;
+    width: 118vw;
+  }
+
+  .about {
+    min-height: auto;
+    gap: 12vh;
+    padding: 10vh 7vw;
+  }
+
+  .about-text {
+    width: 86vw;
+    font-size: var(--normal-text);
+    line-height: 1.25;
+  }
+
+  .plant-left {
+    top: 12vh;
+    left: -10vw;
+    width: 54vw;
+  }
+
+  .plant-right {
+    top: 42vh;
+    right: -10vw;
+    width: 52vw;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    min-height: auto;
+    padding: 8vh 4vw;
+  }
+
+  .project {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: min(92vw, 680px);
+    margin: 0 auto;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-year {
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: 300;
+    transform: translateX(-50%);
+  }
+
+  .more-text {
+    top: 46%;
+    font-size: clamp(28px, 8vw, 56px);
+  }
+
+  .kage-year {
+    top: 57vw;
+    left: 50%;
+  }
+
+  .silent-year {
+    top: 67vw;
+    left: 50%;
+  }
+
+  .meadow-year {
+    top: 83vw;
+    left: 50%;
+  }
+
+  .designers {
+    padding: 8vh 0;
+  }
+
+  .mila-long {
+    height: 100vh;
+    min-height: 760px;
+  }
+
+  .mila-box {
+    height: 100vh;
+    min-height: 760px;
+  }
+
+  .mila-photo {
+    height: 100%;
+    object-position: center top;
+  }
+
+  .mila-role {
+    top: 2vh;
+    left: 4vw;
+    max-width: 92vw;
+    font-size: clamp(42px, 10vw, 80px);
+    line-height: 0.92;
+  }
+
+  .mila-name {
+    top: 36vh;
+    bottom: auto;
+    left: -4vw;
+    width: 112vw;
+  }
+
+  .mila-text {
+    right: auto;
+    bottom: auto;
+    font-size: var(--normal-text);
+    line-height: 1.25;
+  }
+
+  .mila-text-one {
+    top: auto;
+    right: auto;
+    bottom: 20vh;
+    left: 12vw;
+    width: 80vw;
+  }
+
+  .mila-text-two {
+    top: auto;
+    bottom: 5vh;
+    left: 8vw;
+    width: 84vw;
+  }
+
+  .people-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    min-height: auto;
+    margin-top: 5vh;
+  }
+
+  .person {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 96vw;
+    margin: 0 auto;
+  }
+
+  .person-light {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 96vw;
+  }
+
+  .person-text {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 86vw;
+    margin: -1vh auto 0;
+    padding-bottom: 4vh;
+    font-size: var(--normal-text);
+    line-height: 1.28;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 8vh 4vw 0;
+  }
+
+  .contact-left,
+  .contact-picture,
+  .contact-form,
+  .form-input,
+  .form-text {
+    width: 92vw;
+  }
+
+  .contact-left,
+  .contact-picture {
+    height: auto;
+    min-height: 520px;
+  }
+
+  .contact-picture {
+    object-fit: cover;
+  }
+
+  .contact-title {
+    top: 3vh;
+    left: 3vw;
+    width: min(52vw, 260px);
+  }
+
+  .contact-text {
+    top: 18vh;
+    left: 48vw;
+    width: 37vw;
+    gap: 18px;
+    font-size: var(--normal-text);
+  }
+
+  .contact-form {
+    margin-top: 0;
+  }
+
+  .form-line {
+    font-size: var(--normal-text);
+  }
+
+  .form-input,
+  .form-text {
+    padding-right: 4vw;
+    padding-left: 4vw;
+    border-radius: 18px;
+    font-size: var(--normal-text);
+  }
+
+  .form-input {
+    min-height: 54px;
+  }
+
+  .form-text {
+    min-height: 140px;
+  }
+
+  .form-button {
+    width: min(48vw, 220px);
+    min-width: 156px;
+    height: 58px;
+    font-size: var(--normal-text);
+  }
+
+  .footer {
+    min-height: 48vh;
+    padding: 18vh 4vw 16vh;
+  }
+
+  .footer-links {
+    width: 68vw;
+  }
+
+  .footer-links a {
+    font-size: var(--normal-text);
+  }
+
+  .footer-note {
+    width: 76vw;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .footer-logo {
+    top: 7vh;
+    right: 2vw;
+    width: min(48vw, 320px);
+  }
+
+  .popup-box {
+    width: min(90vw, 520px);
+    padding: 4vw;
+    border-radius: 24px;
+  }
+
+  .popup-close {
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .popup-image {
+    width: 100%;
+  }
+
+  .founder-hero {
+    height: 78vh;
+    min-height: 620px;
+  }
+
+  .founder-hero-photo {
+    height: 100%;
+    object-position: center top;
+  }
+
+  .founder-role {
+    right: auto;
+    bottom: 5vh;
+    left: 6vw;
+    max-width: 88vw;
+    font-size: var(--normal-text);
+  }
+
+  .founder-name {
+    right: auto;
+    bottom: 3vh;
+    left: -5vw;
+    width: 104vw;
+  }
+
+  .founder-story {
+    display: grid;
+    grid-template-columns: 44vw 1fr;
+    gap: 5vh 5vw;
+    min-height: auto;
+    padding: 8vh 5vw 10vh;
+  }
+
+  .founder-portrait,
+  .founder-small,
+  .founder-script,
+  .founder-copy {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: 100%;
+  }
+
+  .founder-portrait-left {
+    grid-row: span 2;
+    align-self: start;
+  }
+
+  .founder-script {
+    grid-column: 1 / -1;
+    width: min(70vw, 560px);
+    margin: 1vh auto 0;
+  }
+
+  .founder-small-left,
+  .founder-small-right,
+  .founder-small-center {
+    width: 100%;
+  }
+
+  .founder-final {
+    height: 70vh;
+    min-height: 560px;
+  }
+
+  .founder-final-photo {
+    height: 100%;
+    object-position: center;
+  }
+
+  .kage-hero {
+    height: 92vh;
+    min-height: 620px;
+  }
+
+  .kage-main-photo {
+    top: 11vh;
+    width: 92vw;
+    height: 60vh;
+    min-height: 0;
+  }
+
+  .kage-name {
+    top: 42vh;
+    left: -8vw;
+    width: 118vw;
+  }
+
+  .kage-project-info {
+    right: auto;
+    bottom: 5vh;
+    left: 6vw;
+    font-size: var(--normal-text);
+  }
+
+  .kage-story {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    min-height: auto;
+    padding: 7vh 6vw 5vh;
+    font-size: var(--normal-text);
+  }
+
+  .kage-story-one,
+  .kage-story-two {
+    width: 88vw;
+    margin: 0;
+  }
+
+  .photo-scroll {
+    height: auto;
+    padding: 4vh 0 7vh;
+  }
+
+  .photo-window {
+    position: relative;
+    top: auto;
+    height: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .photo-window::-webkit-scrollbar {
+    display: none;
+  }
+
+  .photo-move {
+    gap: 5vw;
+    padding: 0 4vw;
+    transform: none !important;
+  }
+
+  .side-photo,
+  .side-three {
+    width: 72vw;
+    height: 46vw;
+  }
+
+  .plant-place {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    min-height: auto;
+    padding: 7vh 5vw 10vh;
+  }
+
+  .plant-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: 90vw;
+  }
+
+  .plant-card .plant-info {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: 82vw;
+    margin: 2vh auto 0;
+    font-size: var(--normal-text);
+    opacity: 1;
+    transform: none;
+  }
+
+  .plant-info h2 {
+    margin-bottom: 1.4vh;
+  }
+
+  .plant-info ul {
+    padding-left: 5vw;
+  }
+
+  .plant-author {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    font-size: clamp(28px, 8vw, 44px);
+    transform: none;
+  }
+
+  .merch-hero {
+    min-height: 82vh;
+  }
+
+  .merch-hero-picture {
+    height: calc(82vh - 56px);
+    min-height: 0;
+  }
+
+  .merch-intro {
+    bottom: 10vh;
+    width: 78vw;
+    font-size: 16px;
+  }
+
+  .merch-catalog {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7vw;
+    row-gap: 11vw;
+    padding: 10vw 7vw 16vw;
+  }
+
+  .merch-card {
+    gap: 4vw;
+  }
+
+  .merch-photo {
+    height: 40vw;
+  }
+
+  .merch-info {
+    font-size: 16px;
+  }
+
+  .merch-info h2,
+  .merch-info p {
+    font-size: 16px;
+  }
+
+  .merch-info h2 {
+    margin-bottom: 2.2vw;
+  }
+
+  .merch-cart {
+    width: 32px;
+  }
+}
+
+@media (max-width: 620px) {
+  :root {
+    --normal-text: 10px;
+  }
+
+  .top-menu {
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .menu-box {
+    height: 52px;
+    min-height: 52px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 4vw;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .burger-button {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 34px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .burger-button span {
+    width: 34px;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--dark);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .menu-box[data-open="true"] .burger-button span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-box[data-open="true"] .burger-button span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-box[data-open="true"] .burger-button span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .menu-left {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    z-index: 28;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100vw;
+    padding: 18px 5vw 20px;
+    border-radius: 0 0 10px 10px;
+    background: var(--bg);
+  }
+
+  .menu-box[data-open="true"] .menu-left {
+    display: flex;
+  }
+
+  .menu-item {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-link {
+    font-size: var(--normal-text);
+  }
+
+  .sub-menu {
+    position: static;
+    display: none;
+    gap: 13px;
+    width: 90vw;
+    margin-top: 12px;
+    padding: 14px 0 14px 6vw;
+    border-radius: 10px;
+    font-size: var(--normal-text);
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  .sub-menu[data-show="true"] {
+    display: flex;
+    transform: none;
+  }
+
+  .menu-logo {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: 34px;
+    transform: none;
+  }
+
+  .hero {
+    height: 100vh;
+    min-height: 560px;
+  }
+
+  .hero-name {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .about {
+    gap: 9vh;
+    padding: 9vh 6vw;
+  }
+
+  .about-text {
+    width: 88vw;
+    font-size: var(--normal-text);
+  }
+
+  .plant-left {
+    top: 20vh;
+    left: -24vw;
+    width: 68vw;
+  }
+
+  .plant-right {
+    top: 45vh;
+    right: -24vw;
+    width: 64vw;
+  }
+
+  .projects {
+    gap: 4vh;
+    padding: 7vh 3vw;
+  }
+
+  .project {
+    width: 94vw;
+  }
+
+  .project-year {
+    font-size: clamp(22px, 6vw, 32px);
+    font-weight: 300;
+    transform: translateX(-50%);
+  }
+
+  .kage-year {
+    top: 58vw;
+    left: 50%;
+  }
+
+  .silent-year {
+    top: 68vw;
+    left: 50%;
+  }
+
+  .meadow-year {
+    top: 85vw;
+    left: 50%;
+  }
+
+  .mila-box {
+    height: 196vw;
+    min-height: 0;
+  }
+
+  .mila-long {
+    height: 196vw;
+    min-height: 0;
+  }
+
+  .mila-photo {
+    height: 100%;
+    object-position: center top;
+  }
+
+  .mila-role {
+    top: 2.2vw;
+    left: 2.4vw;
+    max-width: 96vw;
+    font-size: 10vw;
+  }
+
+  .mila-name {
+    top: 82vw;
+    left: -1vw;
+    width: 96vw;
+  }
+
+  .mila-text {
+    font-size: var(--normal-text);
+    line-height: 1.25;
+  }
+
+  .mila-text-one {
+    top: 142vw;
+    right: 4vw;
+    bottom: auto;
+    left: auto;
+    width: 57vw;
+  }
+
+  .mila-text-two {
+    top: 162vw;
+    bottom: auto;
+    left: 7vw;
+    width: 73vw;
+  }
+
+  .people-grid {
+    position: relative;
+    display: block;
+    min-height: 190vw;
+    margin-top: 4vw;
+  }
+
+  .person {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .person-light {
+    position: absolute;
+    width: 100%;
+  }
+
+  .person-text {
+    position: absolute;
+    font-size: var(--normal-text);
+    line-height: 1.28;
+  }
+
+  .person-luka {
+    top: 4vw;
+    left: 0;
+    width: 97vw;
+  }
+
+  .person-clara {
+    top: 72vw;
+    right: 0;
+    width: 94vw;
+  }
+
+  .person-elliot {
+    top: 132vw;
+    left: 0;
+    width: 94vw;
+  }
+
+  .luka-light {
+    top: 39vw;
+    left: 0;
+    width: 97vw;
+  }
+
+  .clara-light {
+    top: 38vw;
+    left: -8vw;
+    width: 96vw;
+  }
+
+  .elliot-light {
+    top: 39vw;
+    left: 0;
+    width: 96vw;
+  }
+
+  .luka-text {
+    top: 45vw;
+    left: 0;
+    width: 92vw;
+  }
+
+  .clara-text {
+    top: 43vw;
+    left: 9vw;
+    width: 79vw;
+  }
+
+  .elliot-text {
+    top: 44vw;
+    left: 0;
+    width: 92vw;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .contact-left,
+  .contact-picture {
+    width: 100vw;
+    height: 94vw;
+    min-height: 0;
+  }
+
+  .contact-form,
+  .form-input,
+  .form-text {
+    width: 90vw;
+  }
+
+  .contact-title {
+    top: 5vw;
+    left: 1vw;
+    width: 48vw;
+  }
+
+  .contact-text {
+    top: 25vw;
+    left: 51vw;
+    width: 43vw;
+    gap: 3vw;
+    font-size: 13px;
+    line-height: 1.18;
+  }
+
+  .contact-form {
+    gap: 2.8vw;
+    margin-top: 0;
+    padding: 9vw 5vw 8vw;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 245, 230, 0.88) 0%,
+      rgba(252, 174, 189, 0.48) 45%,
+      var(--pink) 100%
+    );
+  }
+
+  .form-line {
+    gap: 1.3vw;
+    font-size: 13px;
+  }
+
+  .form-input,
+  .form-text {
+    padding-right: 3.2vw;
+    padding-left: 3.2vw;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .form-input {
+    height: 6.6vw;
+    min-height: 42px;
+  }
+
+  .form-text {
+    height: 11vw;
+    min-height: 76px;
+  }
+
+  .form-button {
+    width: 24vw;
+    min-width: 126px;
+    height: 6vw;
+    min-height: 38px;
+    margin-top: 4vw;
+    font-size: 13px;
+  }
+
+  .footer-links {
+    width: 74vw;
+  }
+
+  .footer-logo {
+    top: auto;
+    right: 2vw;
+    bottom: 0;
+    width: 52vw;
+  }
+
+  .popup-box {
+    padding: 18px;
+  }
+
+  .founder-hero {
+    height: 136vw;
+    min-height: 0;
+  }
+
+  .founder-role {
+    right: auto;
+    bottom: 8vw;
+    left: 4vw;
+    font-size: 13px;
+  }
+
+  .founder-name {
+    bottom: 1vw;
+    left: -4vw;
+    width: 110vw;
+  }
+
+  .founder-story {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    padding: 10vw 5vw 12vw;
+  }
+
+  .founder-portrait-left {
+    width: 72vw;
+    margin-left: -5vw;
+  }
+
+  .founder-portrait-round {
+    width: 52vw;
+    margin-left: auto;
+  }
+
+  .founder-copy,
+  .founder-final-text {
+    font-size: 13px;
+  }
+
+  .founder-copy p + p {
+    margin-top: 4vw;
+  }
+
+  .founder-script {
+    width: 90vw;
+  }
+
+  .founder-small-left,
+  .founder-small-right,
+  .founder-small-center {
+    width: 90vw;
+  }
+
+  .founder-small-right {
+    align-self: flex-end;
+  }
+
+  .founder-small-center {
+    width: 72vw;
+    margin-left: 8vw;
+  }
+
+  .founder-final {
+    height: 118vw;
+    min-height: 0;
+  }
+
+  .founder-final-text {
+    right: 5vw;
+    bottom: 7vw;
+    width: 78vw;
+    line-height: 1.24;
+  }
+
+  .kage-hero {
+    height: 86vh;
+    min-height: 540px;
+  }
+
+  .kage-main-photo {
+    top: 11vh;
+    width: 94vw;
+    height: 58vh;
+    min-height: 0;
+  }
+
+  .kage-name {
+    top: 41vh;
+    left: -12vw;
+    width: 128vw;
+  }
+
+  .kage-story {
+    padding: 7vh 5vw;
+  }
+
+  .side-photo,
+  .side-three {
+    width: 86vw;
+    height: 56vw;
+  }
+
+  .plant-place {
+    gap: 5vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+  }
+
+  .plant-card {
+    width: 92vw;
+  }
+
+  .plant-card .plant-info {
+    width: 88vw;
+  }
+
+  .merch-hero {
+    min-height: 82vh;
+  }
+
+  .merch-hero-picture {
+    height: calc(82vh - 52px);
+    min-height: 0;
+  }
+
+  .merch-intro {
+    bottom: 8vh;
+    width: 82vw;
+    font-size: 12px;
+  }
+
+  .merch-catalog {
+    grid-template-columns: 1fr;
+    row-gap: 14vw;
+    padding: 12vw 8vw 18vw;
+  }
+
+  .merch-card {
+    gap: 5vw;
+  }
+
+  .merch-photo {
+    height: 68vw;
+  }
+
+  .merch-info {
+    font-size: 16px;
+  }
+
+  .merch-info h2 {
+    margin-bottom: 3vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-left {
+    width: 100vw;
+    gap: 16px;
+  }
+
+  .menu-link {
+    font-size: var(--normal-text);
+  }
+
+  .hero {
+    height: 100vh;
+    min-height: 540px;
+  }
+
+  .hero-name {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .about {
+    gap: 8vh;
+    padding: 8vh 5vw;
+  }
+
+  .about-text {
+    width: 90vw;
+    font-size: var(--normal-text);
+  }
+
+  .plant-left {
+    top: 19vh;
+    left: -30vw;
+    width: 76vw;
+  }
+
+  .plant-right {
+    top: 47vh;
+    right: -30vw;
+    width: 72vw;
+  }
+
+  .mila-box {
+    height: 196vw;
+    min-height: 0;
+  }
+
+  .mila-long {
+    height: 196vw;
+    min-height: 0;
+  }
+
+  .mila-role {
+    top: 2.2vw;
+    left: 2.4vw;
+    font-size: 10vw;
+  }
+
+  .mila-name {
+    top: 82vw;
+    left: -1vw;
+    width: 96vw;
+  }
+
+  .mila-text {
+    font-size: var(--normal-text);
+  }
+
+  .mila-text-one {
+    top: 142vw;
+    right: 4vw;
+    bottom: auto;
+    left: auto;
+    width: 57vw;
+  }
+
+  .mila-text-two {
+    top: 162vw;
+    bottom: auto;
+    left: 7vw;
+    width: 73vw;
+  }
+
+  .contact-left,
+  .contact-picture {
+    width: 100vw;
+    height: 94vw;
+    min-height: 0;
+  }
+
+  .contact-title {
+    top: 5vw;
+    left: 1vw;
+    width: 48vw;
+  }
+
+  .contact-text {
+    top: 25vw;
+    left: 51vw;
+    width: 43vw;
+    gap: 3vw;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding-bottom: 16vh;
+  }
+
+  .footer-links a {
+    font-size: var(--normal-text);
+  }
+
+  .footer-note {
+    width: 56vw;
+    font-size: 8px;
+  }
+
+  .footer-logo {
+    right: 2vw;
+    bottom: 0;
+    width: 55vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .plant-left,
+  .plant-right {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  .about-plant {
+    opacity: 0.42;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+@media (max-height: 620px) and (max-width: 900px) {
+  .hero {
+    height: 96vh;
+    min-height: 430px;
+  }
+
+  .mila-box {
+    min-height: 700px;
+  }
+
+  .contact-left,
+  .contact-picture {
+    min-height: 520px;
+  }
+}

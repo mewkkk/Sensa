@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Sensa</title>
+    <link rel="stylesheet" href="./stylesheets/style.css?v=30" />
+  </head>
+  <body class="not-found-body">
+    <header class="top-menu">
+      <nav class="menu-box" id="menu-box">
+        <button class="burger-button" id="burger-button" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu-left">
+          <a class="menu-link" href="./index.html#about">о компании</a>
+          <div class="menu-item">
+            <button
+              class="menu-link menu-button"
+              type="button"
+              data-menu="project-menu"
+            >
+              проекты
+            </button>
+            <div class="sub-menu" id="project-menu">
+              <a href="./kage_pavilion.html">Kage Pavilion</a>
+              <a href="./404.html">Meadow Place</a>
+              <a href="./404.html">Silent Path</a>
+            </div>
+          </div>
+          <a class="menu-link" href="./founder.html">основатель</a>
+          <a class="menu-link" href="./merch.html">магазин</a>
+        </div>
+        <a class="menu-logo" href="./index.html" aria-label="На главную">
+          <img src="./main page/Logo.svg" alt="Sensa" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="not-found-page">
+      <img
+        class="not-found-frame"
+        src="./404/Desktop - 1.svg"
+        alt="404. Такой страницы не существует."
+      />
+      <div class="not-found-mobile" aria-hidden="true">
+        <img class="not-found-number" src="./404/404.svg" alt="" />
+        <p class="not-found-words">
+          Упс... Скоро заработаем ;)<br />
+          С уважением, команда
+          <img class="not-found-sensa" src="./404/Sensa.svg" alt="" />!
+        </p>
+        <img class="not-found-plant" src="./404/Vector.svg" alt="" />
+      </div>
+      <a
+        class="not-found-hit not-found-hit-about"
+        href="./index.html#about"
+        aria-label="О компании"
+      ></a>
+      <a
+        class="not-found-hit not-found-hit-projects"
+        href="./index.html#projects"
+        aria-label="Проекты"
+      ></a>
+      <a
+        class="not-found-hit not-found-hit-founder"
+        href="./founder.html"
+        aria-label="Основатель"
+      ></a>
+      <a
+        class="not-found-hit not-found-hit-shop"
+        href="./merch.html"
+        aria-label="Магазин"
+      ></a>
+      <a
+        class="not-found-hit not-found-hit-logo"
+        href="./index.html"
+        aria-label="На главную"
+      ></a>
+    </main>
+    <script defer src="./src/typography.js?v=1"></script>
+    <script defer src="./src/founder.js?v=1"></script>
+  </body>
+</html>

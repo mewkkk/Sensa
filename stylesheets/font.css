@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "PinyonScript";
+  src: url("../fonts/PinyonScript-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "HostGrotesk";
+  src: url("../fonts/HostGrotesk-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "HostGrotesk";
+  src: url("../fonts/HostGrotesk-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "HostGrotesk";
+  src: url("../fonts/HostGrotesk-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "HostGrotesk";
+  src: url("../fonts/HostGrotesk-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "HostGrotesk";
+  src: url("../fonts/HostGrotesk-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
